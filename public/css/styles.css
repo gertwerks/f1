@@ -1,0 +1,190 @@
+/* The html and body elements cannot have any padding or margin */
+html,
+body {
+    height: 100%; /* for sticky footer */        
+}
+
+h1 {
+    color: #fff;
+
+    z-index: 1000;
+    position: relative;
+}
+.bgwrapper {
+          background: url("../img/bg.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+   -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+   position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+
+}
+/* Wrapper for page content to push down footer */
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -80px; /* must equal footer height */
+    z-index: 1000;
+}
+
+#push,
+#footer { 
+    height: 80px;
+}
+
+#footer {
+    padding: 0 20px;
+}
+
+.margin-left-10 { margin-left: 10px; }
+.margin-right-10{ margin-right: 10px; }
+
+.red, a.red   { color: #d2322d }
+.blue, a.blue  { color: #428bca }
+.green, a.green { color: #47a447 }
+
+a.glyphicon {
+    cursor: pointer;
+}
+
+.pull-up { margin: -45px 0 15px 0 }
+.users-container {
+    width: 400px;
+    margin: 0px auto;
+    background: rgba(255, 255, 255, 0.37);
+    padding: 0px 40px;
+    border-radius: 5px;
+}
+.user-container {
+    position: relative;
+    padding: 0px;
+    border: 1px solid #F0F0F0;
+    border-radius: 7px;
+    margin: 15px 0px 15px 0px;
+    background: rgba(255, 255, 255, 0.86);
+    color: #777;
+
+}
+
+.user-thumb {
+    width: 160%;
+    /* position: absolute; */
+    /* z-index: 0; */
+    margin-left: -39px;
+    /* margin-top: 2px; */
+    padding: 0px 0px 0px 36px;
+}
+
+img.user-thumb {}
+
+.user-img {
+    float: left;
+     
+    width: 68px; 
+     
+    height: 65px; 
+     border-radius: 50px; 
+     -webkit-border-radius: 66px; 
+    -moz-border-radius: 50px;
+     overflow: hidden; 
+     margin: 23px 30px 14px 14px; 
+     box-shadow: 0px 2px 3px #999999; 
+}
+
+.user-img {}
+
+.user-info {
+    padding: 33px 10px 10px 0px;
+    font-size: 14px;
+   /* font-weight: lighter;*/
+}
+
+.user-id {
+    position: absolute;
+
+}
+
+.first-name {
+
+}
+
+.last-name {
+
+}
+
+.grades {
+
+}
+
+.button-panel {
+    position: absolute;
+    right:0px;
+    top:0px;
+}
+
+.user-button {
+    display: block;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 5px 10px;
+    box-shadow: 0px 2px 3px #999999;
+    padding: 12px 0px 0px 13px;
+}
+
+.user-button:hover{
+      box-shadow: 0px 2px 5px rgb(168, 186, 168);
+       font-size: 16px;
+       padding: 10px 0px 0px 12px;
+       text-decoration: none;
+}
+
+.create-button {
+    margin-top:23px;
+}
+
+.navbar {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+  
+}
+
+.navbar-header {
+    width: 100%;
+    padding-top:15px;
+
+}
+
+.navbar-brand {
+    float: none;
+
+}
+
+.points {
+    background-color: rgb(213, 86, 86);
+    /* height:75px; */
+    width: 62px;
+    border-radius: 30px;
+    color:#fff;
+    font-weight: bold;
+    padding: 20px 18px;
+    position: absolute;
+    top: 26px;
+    left: 3px;
+    text-align: center;
+}
