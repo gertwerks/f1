@@ -186,7 +186,7 @@ img.user-thumb {}
     /* position: absolute; */
     /* top: 26px; */
     /* left: 3px; */
-    /* text-align: center; */
+    text-align: center; 
     /* display: block; */
     margin: 26px 0px 0px 0px;
     float: right;
