@@ -13,7 +13,7 @@ var app = angular.module('myApp.services', []).
       });
     };
 
-        ergastAPI.getDriverDetails = function(id) {
+    ergastAPI.getDriverDetails = function(id) {
       return $http({
         method: 'JSONP', 
         url: 'http://ergast.com/api/f1/2014/drivers/'+ id +'/driverStandings.json?callback=JSON_CALLBACK'
@@ -35,5 +35,5 @@ var app = angular.module('myApp.services', []).
 
 // Set values for use in page title
 
-app.value('applicationName', 'CRUD');
+app.value('applicationName', 'Formula One');
 app.value('separator', ' - ');

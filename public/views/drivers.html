@@ -9,11 +9,13 @@
             <div class="col-sm-12 col-md-4">
                 <div class="user-img"><img class="user-thumb" src="img/drivers/{{driver.Driver.driverId}}.png"></div>
             </div>
-            <div class="col-sm-12 col-md-5 user-info">
-                <div class="first-name"><strong> <a href="#/drivers/{{driver.Driver.driverId}}">{{driver.Driver.familyName}} {{driver.Driver.givenName}}</a></strong></div>
-                <div class="constructor">{{driver.Constructors[0].name}}</div>
+            <div class="col-sm-12 col-md-5">
+                <div class="drivers-info">
+                    <div class="first-name"><strong> <a href="#/drivers/{{driver.Driver.driverId}}">{{driver.Driver.familyName}} {{driver.Driver.givenName}}</a></strong></div>
+                    <div class="constructor">{{driver.Constructors[0].name}}</div>
+                </div>
             </div>
-            <div class="col-sm-12 col-md-3">
+            <div class="col-sm-12 col-md-2">
                 <span class="points">{{driver.points}}</span>
             </div>
 
