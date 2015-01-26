@@ -6,7 +6,6 @@ body {
 
 h1 {
     color: #fff;
-
     z-index: 1000;
     position: relative;
 }
@@ -37,6 +36,7 @@ h1 {
     height: 100%;
     margin: 0 auto -80px; /* must equal footer height */
     z-index: 1000;
+    max-width: 600px;
 }
 
 #push,
@@ -61,7 +61,6 @@ a.glyphicon {
 
 .pull-up { margin: -45px 0 15px 0 }
 .users-container {
-    width: 400px;
     margin: 0px auto;
     background: rgba(255, 255, 255, 0.37);
     padding: 0px 40px;
@@ -79,12 +78,11 @@ a.glyphicon {
 }
 
 .user-thumb {
-    width: 160%;
+    width: 100%;
     /* position: absolute; */
     /* z-index: 0; */
-    margin-left: -39px;
+    /* margin-left: -39px; */
     /* margin-top: 2px; */
-    padding: 0px 0px 0px 36px;
 }
 
 img.user-thumb {}
@@ -99,7 +97,8 @@ img.user-thumb {}
      -webkit-border-radius: 66px; 
     -moz-border-radius: 50px;
      overflow: hidden; 
-     margin: 23px 30px 14px 14px; 
+     
+    margin: 23px 0px 24px 4px; 
      box-shadow: 0px 2px 3px #999999; 
 }
 
@@ -107,7 +106,9 @@ img.user-thumb {}
 
 .drivers-info {
     font-size: 14px;
-    padding: 33px 10px 10px 0px;
+    padding: 33px 0px 10px 27px;
+    float: left;
+    width: 53%;
 }
 
 .user-id {
@@ -185,9 +186,10 @@ img.user-thumb {}
     /* position: absolute; */
     /* top: 26px; */
     /* left: 3px; */
-    text-align: center;
-    display: block;
-    margin: 20px 0px 0px 0px;
+    /* text-align: center; */
+    /* display: block; */
+    margin: 26px 0px 0px 0px;
+    float: right;
 }
 
 #main {
