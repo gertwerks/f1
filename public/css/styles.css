@@ -102,6 +102,13 @@ img.user-thumb {}
      box-shadow: 0px 2px 3px #999999; 
 }
 
+.driver-page-img img{
+    border-radius: 31px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    
+}
+
 .user-img {}
 
 .drivers-info {
@@ -134,24 +141,8 @@ img.user-thumb {}
     top:0px;
 }
 
-.user-button {
-    display: block;
-    float: right;
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    overflow: hidden;
-    margin: 5px 10px;
-    box-shadow: 0px 2px 3px #999999;
-    padding: 12px 0px 0px 13px;
-}
 
-.user-button:hover{
-      box-shadow: 0px 2px 5px rgb(168, 186, 168);
-       font-size: 16px;
-       padding: 10px 0px 0px 12px;
-       text-decoration: none;
-}
+
 
 .create-button {
     margin-top:23px;
@@ -204,15 +195,28 @@ img.user-thumb {}
 
 .driver-flag {
   float: left;
-  clear: both;
+ 
 }
 
 .driver-name{
   float: left;
-    clear: both;
+  
 }
 .driver-status {
   float:left;
-    clear: both;
+}
+
+.driver-row {
+  text-align: center;
+}
+
+table.result-table {
+width: 100%;
+margin-top: 30px;
+}
+
+.driver-page-first-name {
+  font-size: 17px;
+  font-weight: bold;
 }
 
