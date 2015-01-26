@@ -168,18 +168,18 @@ img.user-thumb {}
 
 .points {
     background-color: rgb(213, 86, 86);
-    height:75px;
+    /* height:75px; */
     /* width: 62px; */
     border-radius: 38px;
     color:#fff;
   
-    padding: 19px 18px;
+    padding: 9px 9px;
     /* position: absolute; */
     /* top: 26px; */
     /* left: 3px; */
     text-align: center; 
     /* display: block; */
-    margin: 20px 0px 0px 0px;
+    margin: 29px 0px 0px 0px;
     float: right;
     position: relative;
 }
@@ -220,5 +220,12 @@ margin-top: 30px;
 .driver-page-first-name {
   font-size: 17px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+    .bgwrapper {display: none;}
+    body{
+      background: #999999;
+    }
 }
 
