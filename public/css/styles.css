@@ -8,6 +8,8 @@ h1 {
     color: #fff;
     z-index: 1000;
     position: relative;
+    font-size: 16px;
+    padding-top:20px;
 }
 .bgwrapper {
           background: url("../img/bg.jpg") no-repeat center center fixed; 
@@ -39,27 +41,6 @@ h1 {
     max-width: 600px;
 }
 
-#push,
-#footer { 
-    height: 80px;
-}
-
-#footer {
-    padding: 0 20px;
-}
-
-.margin-left-10 { margin-left: 10px; }
-.margin-right-10{ margin-right: 10px; }
-
-.red, a.red   { color: #d2322d }
-.blue, a.blue  { color: #428bca }
-.green, a.green { color: #47a447 }
-
-a.glyphicon {
-    cursor: pointer;
-}
-
-.pull-up { margin: -45px 0 15px 0 }
 .drivers-container {
     margin: 0px auto;
     background: rgba(255, 255, 255, 0.37);
@@ -149,23 +130,28 @@ img.user-thumb {}
 }
 
 .navbar {
-    width: 500px;
+
     margin: auto;
     text-align: center;
   
 }
 
+
 .navbar-header {
     width: 100%;
-    padding-top:15px;
-
+    padding-top: 10px;
+    text-align: left;
+    font-size: 23px;
+    font-weight: bold;
 }
 
 .navbar-brand {
     float: none;
 
 }
-
+.navbar-toggle {
+  margin-top:-3px;
+}
 .points {
     background-color: rgb(213, 86, 86);
     /* height:75px; */
