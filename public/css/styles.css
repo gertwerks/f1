@@ -227,5 +227,11 @@ margin-top: 30px;
     body{
       background: #999999;
     }
+    .drivers-info {
+    font-size: 12px;
+    padding: 33px 0px 10px 27px;
+    float: left;
+    width: 40%;
+  }
 }
 
