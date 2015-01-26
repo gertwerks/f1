@@ -1,23 +1,38 @@
 <section id="main">
   <a class="button" href="/"><- Back to drivers list</a>
-  <nav id="secondary" class="main-nav">
-    <div class="driver-picture">
-      <div class="avatar">
-        <img ng-show="driver" src="img/drivers/{{driver.Driver.driverId}}.png" />
-       <img ng-show="driver" src="img/flags/{{driver.Driver.nationality}}.png" /><br/>
-        {{driver.Driver.givenName}} {{driver.Driver.familyName}}
-      </div>
-    </div>
-    <div class="driver-status">
-      Country: {{driver.Driver.nationality}}   <br/>
-      Team: {{driver.Constructors[0].name}}<br/>
-      Birth: {{driver.Driver.dateOfBirth}}<br/>
-      <a href="{{driver.Driver.url}}" target="_blank">Biography</a>
-    </div>
-  </nav>
+  <div class="row">
 
+<div class="col-sm-4 col-md-4">
+
+    <nav id="secondary" class="main-nav">
+      <div class="driver-picture">
+        <div class="avatar">
+        <div class="driver-img">
+            <img ng-show="driver" class="driver-thumb" src="img/drivers/{{driver.Driver.driverId}}.png" />
+        </div>
+         <div class="driver-flag">
+             <img ng-show="driver" src="img/flags/{{driver.Driver.nationality}}.png" />
+             <span class="country-text">{{driver.Driver.nationality}}</span>
+         </div>
+         <div class="driver-name">
+          {{driver.Driver.givenName}} {{driver.Driver.familyName}}
+          </div>
+        </div>
+      </div>
+      <div class="driver-status">
+        Country: {{driver.Driver.nationality}}   <br/>
+        Team: {{driver.Constructors[0].name}}<br/>
+        Birth: {{driver.Driver.dateOfBirth}}<br/>
+        <a href="{{driver.Driver.url}}" target="_blank">Biography</a>
+      </div>
+    </nav>
+</div>
+
+
+
+<div class="col-sm-8 col-md-8">
   <div class="main-content">
-    <table class="result-table">
+    <table class="result-table" border="1">
       <thead>
         <tr><th colspan="5">Formula 1 2013 Results</th></tr>
       </thead>
@@ -26,14 +41,21 @@
           <td>Round</td> <td>Grand Prix</td> <td>Team</td> <td>Grid</td> <td>Race</td>
         </tr>
         <tr ng-repeat="race in races">
-          <td>{{race.round}}</td>
-          <td><img  src="img/flags/{{race.Circuit.Location.country}}.png" />{{race.raceName}}</td>
-          <td>{{race.Results[0].Constructor.name}}</td>
-          <td>{{race.Results[0].grid}}</td>
-          <td>{{race.Results[0].position}}</td>
+          <td align="center" cellpadding="10">{{race.round}}</td>
+          <td cellpadding="10"><img  src="img/flags/{{race.Circuit.Location.country}}.png" /><br>{{race.raceName}}</td>
+          <td cellpadding="10">{{race.Results[0].Constructor.name}}</td>
+          <td align="center" cellpadding="10">{{race.Results[0].grid}}</td>
+          <td align="center" cellpadding="10">{{race.Results[0].position}}</td>
         </tr>
       </tbody>
     </table>
   </div>
+</div>
 
+
+
+
+
+
+</div>
 </section>

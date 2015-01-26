@@ -60,13 +60,13 @@ a.glyphicon {
 }
 
 .pull-up { margin: -45px 0 15px 0 }
-.users-container {
+.drivers-container {
     margin: 0px auto;
     background: rgba(255, 255, 255, 0.37);
     padding: 0px 40px;
     border-radius: 5px;
 }
-.user-container {
+.driver-container {
     position: relative;
     padding: 0px;
     border: 1px solid #F0F0F0;
@@ -77,7 +77,7 @@ a.glyphicon {
 
 }
 
-.user-thumb {
+.driver-thumb {
     width: 100%;
     /* position: absolute; */
     /* z-index: 0; */
@@ -87,7 +87,7 @@ a.glyphicon {
 
 img.user-thumb {}
 
-.user-img {
+.driver-img {
     float: left;
      
     width: 68px; 
@@ -199,5 +199,20 @@ img.user-thumb {}
   margin: 40px auto;
   border-radius: 7px;
   background-color: rgba(255, 255, 255, 0.85);
+}
+
+
+.driver-flag {
+  float: left;
+  clear: both;
+}
+
+.driver-name{
+  float: left;
+    clear: both;
+}
+.driver-status {
+  float:left;
+    clear: both;
 }
 

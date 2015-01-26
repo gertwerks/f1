@@ -1,13 +1,13 @@
 
-<div class="users-container">
+<div class="drivers-container">
 
 
 
     <h1>Drivers</h1>
     <div ng-repeat="driver in drivers">
-         <div class="user-container row">
+         <div class="driver-container row">
                 <div class="col-sm-12 col-md-12">
-                    <div class="user-img"><img class="user-thumb" src="img/drivers/{{driver.Driver.driverId}}.png"></div>
+                    <div class="driver-img"><img class="driver-thumb" src="img/drivers/{{driver.Driver.driverId}}.png"></div>
                     <div class="drivers-info">
                         <div class="first-name"><strong> <a href="#/drivers/{{driver.Driver.driverId}}">{{driver.Driver.familyName}} {{driver.Driver.givenName}}</a></strong></div>
                         <div class="constructor">{{driver.Constructors[0].name}}</div>
